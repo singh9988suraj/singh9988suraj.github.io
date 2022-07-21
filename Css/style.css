@@ -1,0 +1,273 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    color: white;
+}
+h1{
+    color: white;
+}
+body {
+    position: relative;
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    overflow-x: hidden;
+}
+nav{
+    margin-top: 2px;
+    height: 80px;
+    background-image: linear-gradient(
+    to right,
+    #38b6ff,
+    #a1a8fc,
+    #de9ae0,
+    #fd94b6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    position: sticky;
+    top: 2px;
+}
+nav h1 {
+  color: whitesmoke;
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  word-spacing: 3px;
+  
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0rem 0.5rem;
+    
+
+}
+nav ul li{
+    margin: 0 5px;
+}nav ul li a:hover{
+    color: crimson;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+.logo{
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    width: 4.8rem;
+    border-radius: 50%;
+    float: left;
+}
+nav .menuBtn{
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+
+@media (max-width: 760px){
+    nav .menuBtn{
+  margin: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  position: fixed;
+    top: 0%;
+    left: 80%;
+    }
+   nav .logo{
+        position: fixed;
+        left: 1opx;
+        top: 10px;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: skyblue;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+
+    }
+    nav ul li a:hover{
+        background: none;
+        color: cyan;
+        border-radius: 100%;
+        transition: all 0.3s ease;
+    }
+
+}
+
+
+
+.logo{
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    width: 3.8rem;
+    border-radius: 50%;
+    float: left;
+    
+}
+
+
+.home {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/home-img.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  max-width: 40rem;
+   align-items: center;
+}
+
+.home .content h3 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f3ec78;
+    background-image: linear-gradient(
+    to right,
+    #38b6ff,
+    #a1a8fc,
+    #de9ae0,
+    #fd94b6,
+    #ff9b8d,
+    #ffa475,
+    #fcb35d,
+    #e8c54a,
+    #d3cb44,
+    #bbd044,
+    #9fd54b,
+    #7ed957
+  );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.home .content p {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.form {
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2rem 5rem 0 rgb(252 255 255 / 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+    justify-content: center;
+    z-index: 10;
+    transition: 1000ms ease-in;
+    color: white;
+}
+.home .right{
+ text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color:white;}
+    
+    
+p{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color:white;
+}
+
+
+    
+  
+ 
+
+#donate {
+    font-size: 16px;
+    padding: 16px;
+    margin-top: 15px;
+    background-color: #B18904;
+    border: none;
+    text-decoration: none ;
+    font-weight: bold;
+    color: black;
+    transition: 300ms linear;
+    
+    
+}
+
+.btn {
+
+  display: flex;
+   position: absolute;
+  top: 80%;
+  left: 45%;
+  margin: -25px 0 0 -25px;
+  padding: 0.9rem 3rem;
+  font-size: 2.3rem;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #38b6ff,
+    #a1a8fc,
+    #de9ae0,
+    #fd94b6,
+    #ff9b8d,
+    #ffa475,
+    #fcb35d,
+    #e8c54a,
+    #d3cb44,
+    #bbd044,
+    #9fd54b,
+    #7ed957
+  );
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+
